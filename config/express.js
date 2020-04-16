@@ -11,5 +11,7 @@ module.exports = () => {
   // MIDDLEWARES
   app.use(bodyParser.json());
 
+  require('../api/routes/taxCoupon')(app);
+  
   return app;
 };
